@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
+import { bindActionCreators } from 'redux';
+import { setFlats } from '../actions';
+
 import Flat from '../components/flat';
+
 
 class FlatList extends Component {
   static defaultProps = {
@@ -21,6 +25,7 @@ class FlatList extends Component {
     "priceCurrency": "EUR"
 	 }]
   } 
+
 
   componentWillMount() {
 
