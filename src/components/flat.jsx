@@ -5,15 +5,14 @@ class Flat extends Component {
   render() {
 
   	return(
+
   		<div className="card-trip">
-		  <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
+		  <img src={this.props.flat.imageUrl} />
 		  <div className="card-trip-infos">
 		    <div>
-		      <h2>Title here</h2>
-		      <p>Short description here!</p>
+		      <h4>{this.props.flat.name}</h4>
 		    </div>
-		    <h2 className="card-trip-pricing">£99.99</h2>
-		    <img src="https://kitt.lewagon.com/placeholder/users/krokrob" className="card-trip-user avatar-bordered" />
+		    <h5 className="card-trip-pricing">{this.props.flat.price}</h5>
 		  </div>
 		</div>
 
