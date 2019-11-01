@@ -3,7 +3,7 @@ import { bindActionCreators } from 'redux';
 import { setFlats } from '../actions';
 import { connect } from 'react-redux';
 
-import Flat from '../components/flat';
+import Flat from '../containers/flat';
 
 class FlatList extends Component {
  
