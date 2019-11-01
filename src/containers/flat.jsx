@@ -12,12 +12,13 @@ class Flat extends Component {
 
 
   render() {
-  	return(
 
   		let classes = "card-trip";
   		if (this.props.flat === this.props.selectedFlat) {
   			classes += " selected";
   		}
+  		
+  	return(
 
   		<div className={classes} onClick={this.handleClick} >
 		  <img src={this.props.flat.imageUrl} />
