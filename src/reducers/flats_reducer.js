@@ -6,7 +6,7 @@ function flatsReducer(state, action) {
   if (action.type === 'SET_FLATS') {
     return action.payload;
   }
-  	return state;
+  return state;
 }
 
 export default flatsReducer;

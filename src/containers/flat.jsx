@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
-import { selectFlat } from '../actions/index';
+import { selectFlat } from '../actions';
 
 class Flat extends Component {
 
-  handleCLick = () => {
+  handleClick = () => {
   	this.props.selectFlat(this.props.flat);
   }
 
