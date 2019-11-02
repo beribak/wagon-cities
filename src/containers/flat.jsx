@@ -10,17 +10,16 @@ class Flat extends Component {
   	this.props.selectFlat(this.props.flat);
   }
 
-
   render() {
 
-  		let classes = "card-trip";
-  		if (this.props.flat === this.props.selectedFlat) {
-  			classes += " selected";
-  		}
+	let classes = "card-trip";
+	if (this.props.flat === this.props.selectedFlat) {
+		classes += " selected";
+	}
   		
   	return(
 
-  		<div className={classes} onClick={this.handleClick} >
+  		<div className={classes} onClick={this.handleClick}>
 		  <img src={this.props.flat.imageUrl} />
 		  <div className="card-trip-infos">
 		    <div>
@@ -36,15 +35,15 @@ class Flat extends Component {
 
 function mapDispatchToProps(dispatch) {
 	return bindActionCreators(
-		{selectFlat: selectFlat},
+		{ selectFlat: selectFlat },
 		dispatch
 	);
 }
 
-function mapStateToProps(reduxState) {
+function mapStateToProps(state) {
 	return{
-		selectedFlat: reduxState.selectedFlat 
-	}
+		selectedFlat: state.selectedFlat 
+	};
 }
 
-export default connect(mapStateToProps, mapDispatchToProps )(Flat);
+export default connect(mapStateToProps, mapDispatchToProps)(Flat);

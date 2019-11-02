@@ -14,11 +14,10 @@ body {
   overflow: hidden;
   background: white;
   box-shadow: 0 0 5px rgba(0,0,0,0.2);
-  border: 1px solid white;
+  /*border: 1px solid white;*/
 }
-
 .card-trip.selected {
-  border: 1px solid red; 
+  border: 3px solid red; 
 }
 
 .card-trip > img {

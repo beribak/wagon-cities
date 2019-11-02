@@ -1,12 +1,14 @@
-export default function selectedFlatReducer(state, action) {
+function selectedFlatReducer(state, action) {
 	if (state === undefined) {
 		return null;
 	} 
 
-	if (state === 'SELECT_FLAT') {
+	if (action.type === 'SELECT_FLAT') {
 		return action.payload;
 	} else {
 	    return state;		
 	}
 
 }
+
+export default selectedFlatReducer;

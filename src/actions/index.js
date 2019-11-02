@@ -9,6 +9,7 @@ export function setFlats() {
 }
 
 export function selectFlat(flat) {
+	
 	return {
 		type: 'SELECT_FLAT',
 		payload: flat
