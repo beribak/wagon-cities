@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
-import { selectFlat } from '../actions';
+import { selectFlat } from '../actions/index';
 
 class Flat extends Component {
 
@@ -35,7 +35,7 @@ class Flat extends Component {
 
 function mapDispatchToProps(dispatch) {
 	return bindActionCreators(
-		{ selectFlat: selectFlat },
+		{ selectFlat },
 		dispatch
 	);
 }

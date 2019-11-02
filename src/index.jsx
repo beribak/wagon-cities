@@ -8,15 +8,16 @@ import '../assets/stylesheets/application.scss';
 import flatsReducer from './reducers/flats_reducer';
 import selectedFlatReducer from './reducers/selected_flat_reducer';
 
-const reducers = combineReducers({
- flats: flatsReducer,
- selectedFlat: selectedFlatReducer
-});
-
 import App from './components/app';
 
+const reducers = combineReducers({
+  flats: flatsReducer,
+  selectedFlat: selectedFlatReducer
+});
+
 ReactDOM.render(
- <Provider store={createStore(reducers)}>
-   <App />
- </Provider>,
-document.getElementById('root')); 
+  <Provider store={createStore(reducers)}>
+    <App />
+  </Provider>,
+  document.getElementById('root')
+);

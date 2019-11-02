@@ -1,14 +1,12 @@
 function flatsReducer(state, action) {
-	
-	if (state === undefined) {
-		return []
-	}
+  if (state === undefined) {
+    return [];
+  }
 
-	if (action.type === 'SET_FLATS') {
-		return action.payload;
-	} else {
-		return state;
-	}
+  if (action.type === 'SET_FLATS') {
+    return action.payload;
+  }
+  	return state;
 }
 
 export default flatsReducer;

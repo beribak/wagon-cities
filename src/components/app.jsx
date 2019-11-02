@@ -5,14 +5,13 @@ import Map from '../containers/map';
 
 
 class App extends Component {
-
   render() {
-  	return(
-  		<div className="row">
-  			<FlatList />
-  			<Map />
-  		</div>
-	);
+  	return (
+    <div className="row">
+      <FlatList />
+      <Map />
+    </div>
+    );
   }
 }
 
