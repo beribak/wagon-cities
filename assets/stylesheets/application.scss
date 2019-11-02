@@ -5,18 +5,17 @@ body {
 .flat-list {
  display: flex;
  flex-wrap: wrap;
+ padding: 10px;
 }
-
-
 
 .card-trip {
-  width: 33%;
+  width: 33.3%;
   overflow: hidden;
   background: white;
-  border: 1px solid white;
+  border: 2px solid white;
 }
 .card-trip.selected {
-  border: 3px solid red; 
+  border: 2px solid red; 
 }
 
 .card-trip > img {
